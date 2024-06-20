@@ -1,0 +1,20 @@
+[build]
+    publish = "build/"
+    command = "sed -i s@API_PLACEHOLDER@${REACT_APP_API_SERVER}@g netlify.toml && npm run build"
+[[redirects]]
+    from = "/api/*"
+    to = "API_PLACEHOLDER/api/:splat"
+    status = 200
+[[redirects]]
+    from = "/auth/*"
+    to = "API_PLACEHOLDER/auth/:splat"
+    status = 200
+[[redirects]]
+    from = "/img/*"
+    to = "API_PLACEHOLDER/img/:splat"
+    status = 200
+
+[[redirects]]
+    from = "/*"
+    to = "/index.html"
+    status = 200
