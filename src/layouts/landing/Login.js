@@ -4,7 +4,7 @@ import { filterInput } from 'utils/helpers'
 // import { AuthContext } from 'utils/context/auth'
 import { connect } from 'react-redux'
 import { login } from 'store/authSlice'
-import { Figure, Form, Col } from 'react-bootstrap'
+import { Form, Col } from 'react-bootstrap'
 
 class Login extends React.Component {
     // static contextType = AuthContext;
@@ -59,24 +59,9 @@ class Login extends React.Component {
     render() {
         let disabled = this.state.disabled
         return (
-            <Col style={{ maxWidth: "400px" }} className="mx-auto border px-3 pb-3">
-                {!this.props.compact && (
-                    <Figure className='d-flex flex-column align-items-end'>
-                        <Figure.Image
-                            className='align-self-start'
-                            width={250}
-                            height={250}
-                            src="/img/login-thumb-vector.svg"
-                            alt="people vector"
-                        />
-                        <Figure.Caption as="a" href="https://www.freepik.com/free-photos-vectors/people">
-                            <small className="text-muted text-wrap">People vector created by pikisuperstar - www.freepik.com</small>
-                        </Figure.Caption>
-                    </Figure>
-                )}
-                <h5 className="font-weight-bolder mt-3">
-                    Login to see what’s happening in the muzamilverse right now
-                </h5>
+            <Col style={{ marginTop:"150px", maxWidth: "400px" }} className="mx-auto border px-3 pb-3">
+
+
                 <fieldset disabled={disabled}>
                     <Form onSubmit={this.handleSubmit} >
                         <Form.Group controlId="username">

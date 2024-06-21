@@ -29,12 +29,12 @@ export default (props) => {
                     </MediaQuery>
                 )}
                 {!props.compact && (
-               <Figure.Image 
-               src="/musicosred.jpg" 
-               alt="Una red social dirigida a los musicos y amantes de la musica." 
-               height={180} 
+               <Figure.Image style={{  marginTop:"75px", borderRadius:"20px"}}
+               src="/musicosred.jpg"
+               alt="Una red social dirigida a los musicos y amantes de la musica."
+               height={180}
                className="rounded mx-auto d-block"
-             />                 
+             />
                 )}
             </Route>
         </Switch>

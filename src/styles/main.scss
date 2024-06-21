@@ -6,19 +6,22 @@ html {
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+background-color: 	#121212;
+color: white ;
 }
 a {
   color: $primary;
   text-decoration: none;
   & img:hover,
   & figure:hover {
-    box-shadow: 0px 0px 5px 0px var(--primary);
+    box-shadow: 0px 0px 10px 0px white;
   }
   svg {
     float: left;
   }
 }
-.btn {
+.btn {//color:red;
+  color: #1db954;
   font-family: inherit;
   // font-weight: inherit;
   // font-size: inherit;
@@ -29,13 +32,16 @@ a {
 }
 button {
   font-family: inherit;
+
   // font-size: inherit;
   // font-weight: inherit;
   > span {
     margin: auto;
+    color:white;
   }
 }
 textarea {
+
   resize: none;
   font: inherit;
   border: none;
@@ -50,8 +56,9 @@ textarea {
   }
 }
 input {
+
   border: none;
-  color: $dark;
+  color:red;
   background-color: transparent;
   font-family: inherit;
   &:active:focus {
@@ -60,7 +67,7 @@ input {
   }
 }
 a {
-  white-space: nowrap;
+  white-space: nowrap;color:	#b3b3b3;
 }
 .hide-scroll {
   /* This is the magic bit for Firefox */
@@ -97,10 +104,10 @@ input[type="password"] {
 .card-header {
   font-weight: 800;
   font-size: 1.25em;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid #b3b3b3;color:#1db954;
 }
 .card-footer {
-  border-top: 1px solid $border-color !important;
+  border-top: 1px solid #b3b3b3 !important;
 }
 .bg-clear {
   background-color: transparent !important;
@@ -109,10 +116,10 @@ a:not(.stretched-link) {
   z-index: 500;
 }
 .high-index {
-  z-index: 1000;
+  z-index: 1000;//color:red;
 }
 .higher-index {
-  z-index: 2000;
+  z-index: 2000;color:#b3b3b3;
 }
 @keyframes slide {
   0% {
@@ -133,9 +140,10 @@ blockquote {
   white-space: pre-wrap !important;
   word-break: break-word !important;
   overflow-wrap: break-word !important;
+  color:white;
 }
 #user-popover {
-  box-shadow: 0 0 1rem rgba($dark, 0.35);
+  box-shadow: 0 0 1rem rgba($dark, 0.35);color:#b3b3b3;
 }
 @media (max-width: 576px) {
   .modal-dialog.modal-lg {
@@ -165,7 +173,9 @@ blockquote {
 }
 a + span.badge {
   left: -10px;
-  top: -7.5px;
+  top: -7.5px;color:	white;
+  background-color: #535353;
+  //z-index: 1000;
   // content: attr(data-count);
 }
 .border-left-right-primary-custom {
@@ -179,3 +189,115 @@ a + span.badge {
 .break-all {
   word-break: break-all;
 }
+
+/*
+color:red;
+background-color: red;
+*/
+
+.card{
+  background-color: #343527 !important;
+}
+card:hover{
+  background-color: #343527 !important;
+}
+.card-footer {
+  background-color: #343527 !important;
+}
+.card-header{
+  background-color: #343527 !important;
+}
+.bg-white {
+  //background-color: #121212 !important;
+  color: white;
+}
+.bg-white:first-child {
+  background-color: #121212 !important;
+}
+
+a:not([href]):not([class]) {
+color: white;
+
+}
+a:not([href]):not([class]):hover {
+  color: white;
+
+}
+.text-muted {
+  color: #6c7f8f !important;
+}
+.text-dark {
+  color: white !important;
+}
+
+.btn-naked-primary:not(:disabled):not(.disabled).active {
+  color: white;
+  background-color: #535353 !important;
+  border: 1px solid #6f6f6f;
+  box-shadow: inset  0px 0px 4px rgba(255, 255, 255, 0.2);
+}
+.btn-primary {
+  color: #fff !important;
+  //background-color: #b3b3b3;
+  border-color: #535353;
+}
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #b3b3b3 !important;
+  border-color: #535353;
+
+}
+a:hover {
+  color: white;
+}
+.list-group-item-action:hover, .list-group-item-action:focus {
+
+  background-color: transparent;
+}
+.text-primary {
+ color: #1ED760 !important;
+}
+.btn-naked-primary:not(:disabled):not(.disabled):active, .btn-naked-primary:not(:disabled):not(.disabled).active, .show > .btn-naked-primary.dropdown-toggle {
+
+  background-color: white;
+
+}
+
+.btn-naked-primary:hover {
+  color: #212529;
+  background-color: white;
+
+}
+
+
+
+
+textarea {
+  color: white;
+}
+
+.modal-content {
+  background-color: #121212;
+
+}
+.close {
+  color: #343527 !important;
+}
+
+.border {
+  border: 1px solid transparent !important;
+}
+.dropdown-item {
+  border-radius: 20px !important;
+}
+
+.dropdown-menu {
+  border-radius: 20px !important;
+}
+.btn-naked-primary:not(:disabled):not(.disabled):active, .btn-naked-primary:not(:disabled):not(.disabled).active, .show > .btn-naked-primary.dropdown-toggle {
+  background-color: #b3b3b3;
+}
+.form-group {
+border-radius: 10px;
+}
+
