@@ -52,12 +52,12 @@ export default props => {
                     className="high-index"
                     as='button'
                     onClick={e => handleRepost(post)}
-                >{post.retweeted ? "Undo Repost" : "Repost"}</Dropdown.Item>
+                >{post.retweeted ? "Deshacer volver a publicar" : "Volver a publicar"}</Dropdown.Item>
                 <Dropdown.Item
                     as={Link}
                     className="high-index"
                     to={`/compose/post?quote=${post.id_str}`}
-                >Quote this post</Dropdown.Item>
+                >Cita esta publicación</Dropdown.Item>
             </Dropdown.Menu>
         </Dropdown>
         {/* reply */}

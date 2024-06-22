@@ -65,7 +65,7 @@ class Login extends React.Component {
                 <fieldset disabled={disabled}>
                     <Form onSubmit={this.handleSubmit} >
                         <Form.Group controlId="username">
-                            <Form.Label>Username</Form.Label>
+                            <Form.Label>Nombre de Usuario</Form.Label>
                             <Form.Control
                                 onChange={this.handleChange}
                                 value={this.state.username}
@@ -75,7 +75,7 @@ class Login extends React.Component {
                             ></Form.Control>
                         </Form.Group>
                         <Form.Group className="mb-0" controlId="password">
-                            <Form.Label>Password</Form.Label>
+                            <Form.Label>Contraseña</Form.Label>
                             <Form.Control
                                 onChange={this.handleChange}
                                 value={this.state.password}
@@ -91,14 +91,14 @@ class Login extends React.Component {
                         </p>
                         <div className="d-flex flex-column align-items-center">
                             <button type="submit" className="btn btn-outline-primary btn-block rounded-pill font-weight-bold">
-                                Log in
+                                Iniciar Sesión
                             </button>
                             <small className="text-muted m-2">or</small>
                             <Link
                                 to="/signup"
                                 className="btn btn-primary btn-block rounded-pill font-weight-bold"
                             >
-                                Sign up
+                                Regístrate
                             </Link>
                         </div>
                     </Form>

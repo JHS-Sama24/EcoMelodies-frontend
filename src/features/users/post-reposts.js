@@ -18,7 +18,7 @@ export default props => {
     }, [postId, dispatch])
     return (<>
         <Heading
-            title="Reposted by"
+            title="Publicado nuevamente por"
             backButton
             btnProfile
         />

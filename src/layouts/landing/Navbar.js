@@ -11,13 +11,13 @@ class Navigationbar extends React.Component {
             <Navbar bg="white" sticky="top" className="py-1 border" style={{ zIndex: 10000 }}>
                 <Container>
                     <Navbar.Brand as={Link} className="btn btn-naked-primary rounded-circle text-primary" to="/">
-                        <img className="rounded-circle" height="45" width="45" src="/android-chrome-192x192.png" alt="logo" />
+                        <img className="rounded-circle" height="45" width="45" src="/EcoMelodies2-logo.png" alt="logo" />
                         {/* <FontAwesomeIcon size="lg" icon={faTwitter} /> */}
                     </Navbar.Brand>
                     <Search className="form-inline w-100" />
                     <Row className="ml-auto d-none d-lg-flex justify-content-end w-50">
-                        <Link to="/login" className="btn btn-outline-primary rounded-pill px-3 py-2 font-weight-bold">Log in</Link>
-                        <Link to="/signup" className="btn btn-primary rounded-pill px-3 py-2 font-weight-bold ml-2">Sign up</Link>
+                        <Link to="/login" className="btn btn-outline-primary rounded-pill px-3 py-2 font-weight-bold">Iniciar Sesión</Link>
+                        <Link to="/signup" className="btn btn-primary rounded-pill px-3 py-2 font-weight-bold ml-2">Regístrate</Link>
                     </Row>
                 </Container>
             </Navbar>

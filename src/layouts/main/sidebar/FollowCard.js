@@ -21,7 +21,7 @@ function FollowCard(props) {
                 <Card.Link
                     as={Link}
                     to={footer.href}
-                >Show more</Card.Link>
+                >Mostrar más</Card.Link>
             </Card.Footer>
         </Card>
     )

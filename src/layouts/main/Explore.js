@@ -19,13 +19,13 @@ export default (props) => {
         </div>
         <Switch>
             <Route path='/explore/users'>
-                <Heading title="Users" />
+                <Heading title="Usuarios" />
                 <Users noPop />
             </Route>
             <Route path='/'>
                 {!props.noSuggestions && (
                     <MediaQuery maxWidth={992}>
-                        <FollowCard noPop title='Follow more users to see their posts' length={4} />
+                        <FollowCard noPop title='Sigue a más usuarios para ver sus publicaciones' length={4} />
                     </MediaQuery>
                 )}
                 {!props.compact && (

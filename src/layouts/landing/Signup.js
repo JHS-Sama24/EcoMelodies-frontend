@@ -52,7 +52,7 @@ class Signup extends React.Component {
                 <fieldset disabled={disabled}>
                     <Form onSubmit={this.handleSubmit}>
                         <Form.Group controlId="username">
-                            <Form.Label>Choose a username - <small className="text-muted">required</small></Form.Label>
+                            <Form.Label>Elige un nombre de usuario <small className="text-muted"></small></Form.Label>
                             <Form.Control
                                 type="text"
                                 name="username"
@@ -61,7 +61,7 @@ class Signup extends React.Component {
                             ></Form.Control>
                         </Form.Group>
                         <Form.Group controlId="fillname">
-                            <Form.Label>Full name - <small className="text-muted">optional</small></Form.Label>
+                            <Form.Label>Nombre completo - <small className="text-muted">opcional</small></Form.Label>
                             <Form.Control
                                 type="text"
                                 name="fullname"
@@ -69,14 +69,14 @@ class Signup extends React.Component {
                             ></Form.Control>
                         </Form.Group>
                         <Form.Group controlId="password">
-                            <Form.Label>Choose a password - <small className="text-muted">required</small></Form.Label>
+                            <Form.Label>Elije una contraseña  <small className="text-muted"></small></Form.Label>
                             <Form.Control
                                 type="password"
                                 name="password"
                             ></Form.Control>
                         </Form.Group>
                         <p className="mt-n2">
-                            <small>Already have account? <Link to="/login">login instead</Link></small>
+                            <small>¿Ya tienes cuenta? <Link to="/login">inicie sesión en su lugar</Link></small>
                             <br />
                             <small className="text-danger">{this.state.error}</small>
                         </p>
@@ -84,13 +84,13 @@ class Signup extends React.Component {
                             <button
                                 type="submit"
                                 className="btn btn-outline-primary font-weight-bold rounded-pill btn-block">
-                                <span>Sign up</span>
+                                <span>Regístrate</span>
                             </button>
                             <div className="seperator"><span>or</span></div>
                             <Link
                                 to="login"
                                 className="btn btn-primary font-weight-bold rounded-pill btn-block">
-                                <span>Log in</span>
+                                <span>Iniciar Sesión</span>
                             </Link>
                         </div>
                     </Form>

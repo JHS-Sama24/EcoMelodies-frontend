@@ -43,7 +43,7 @@ export default () => {
             posts={posts}
             status={status}
             getPosts={() => { dispatch(trySearch()) }}
-        /> : <div className="message">No posts to show</div>}
+        /> : <div className="message">No hay publicaciones para mostrar</div>}
         {status === 'error' && <TryAgain fn={() => { dispatch(changeQuery(urlq)) }} />}
     </>)
 }

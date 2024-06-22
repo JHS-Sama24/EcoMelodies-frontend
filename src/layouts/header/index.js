@@ -24,7 +24,7 @@ function Header(props) {
         href: "/home",
     }
     let compose = {
-        name: "Post",
+        name: "Publicar",
         icon: faPlusCircle
     }
     let list = [
@@ -34,28 +34,23 @@ function Header(props) {
             icon: faHome
         },
         {
-            name: "Explore",
+            name: "Explorar",
             href: "/explore",
             icon: faHashtag
         },
         {
-            name: "Profile",
+            name: "Perfil",
             href: `/user/${screen_name}`,
             icon: faUser,
         },
         {
-            name: "Notifications",
+            name: "Notificaciones",
             href: "/notifications",
             icon: faBell,
             count: notifsCount
         },
-      
-        {
-            name: "Settings",
-            href: "/settings",
-            icon: faEllipsisH
-        },
-        
+
+
 
     ]
     return (

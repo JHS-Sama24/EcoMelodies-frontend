@@ -27,17 +27,17 @@ export default props => {
     let handleUnFollow = async e => {
         e.preventDefault()
         unFollowUser(user.screen_name)
-        setHoverText("Unfollowed")
+        setHoverText("Dejado de Seguir")
     }
     let handleMouseEnter = useCallback(async _ => {
-        following && setHoverText("Unfollow")
+        following && setHoverText("Dejar de seguir")
         following && setHoverVariant('danger')
     }, [following])
     let handleMouseLeave = async _ => {
         setHoverText('')
         setHoverVariant('')
     }
-    let text = !following ? "Follow" : "Following"
+    let text = !following ? "Seguir" : "Siguiendo"
     let variant = following ? "primary" : "outline-primary"
     if (!isAuthenticated
         || (AuthUser && AuthUser.screen_name === user.screen_name))

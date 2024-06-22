@@ -79,7 +79,7 @@ export default props => {
                         <Link
                             className="btn btn-outline-primary px-3 rounded-pill font-weight-bold"
                             to='/settings/profile'
-                        >Edit profile</Link>
+                        >Editar perfil</Link>
                     ) : (
                         <FollowButton
                             user={user}
@@ -118,15 +118,14 @@ export default props => {
                     <Link
                         to={`/user/${user.screen_name}/followers`}
                         className="text-muted mr-2"
-                    >{numFormatter(user.followers_count)} <span>Followers</span></Link>
+                    >{numFormatter(user.followers_count)} <span>Seguidores</span></Link>
 
                     <Link
                         to={`/user/${user.screen_name}/friends`}
                         className="text-muted mr-2"
-                    >{numFormatter(user.friends_count)} <span>Following</span></Link>
+                    >{numFormatter(user.friends_count)} <span>Siguiendo</span></Link>
 
-                    <span className={isNotifEnabled ? "text-success" : "text-danger"}>{isNotifEnabled ? "Notifications enabled" : "Notifications disabled"}</span>
-                </Row>
+                     </Row>
             </div>
             <h5 className="m-2 pb-2 border-bottom">{user.statuses_count} <span className="text-muted">Posts</span></h5>
         </>)

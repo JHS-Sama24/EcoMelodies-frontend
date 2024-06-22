@@ -53,20 +53,10 @@ const AlertsProvider = ({ children, ...props }) => {
         ensureCompleteProfile
     }} {...props}>
         {children}
-        {/* notification prompt */}
-        <Prompt
-            show={showNotifPermission}
-            header="Allow push notifications!"
-            body="I will not bug you often, but lets try having notifications on user mentions or follows to test interactivity on this project"
-            cancelText="Maybe later"
-            confirmText="Bring it on"
-            handleConfirm={() => askPermission().then(handlePermission)}
-            handleCancel={() => { setNotifPermission(false) }}
-        />
     </AlertsContext.Provider>)
 }
 
 const useAlerts = () => React.useContext(AlertsContext)
 //for functional components
 
-export { AlertsProvider, useAlerts, AlertsContext } 
+export { AlertsProvider, useAlerts, AlertsContext }

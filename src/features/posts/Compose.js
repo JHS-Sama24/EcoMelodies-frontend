@@ -95,7 +95,7 @@ class Compose extends React.Component {
                             onChange={this.handleChange}
                             onKeyPress={this.handleLine}
                             value={this.state.editor_text}
-                            placeholder="What's happening?"
+                            placeholder="¿Qué está pasando?"
                         ></textarea>
                         <div className="border-top d-flex justify-content-between align-items-center pt-2">
                             <div style={{ fontSize: '1.5em' }}>
@@ -115,7 +115,7 @@ class Compose extends React.Component {
                                     disabled={!this.state.active}
                                     className="btn btn-primary rounded-pill px-3 py-2 font-weight-bold"
                                 >
-                                    Post
+                                    Publicar
                                 </button>
                             </div>
                         </div>

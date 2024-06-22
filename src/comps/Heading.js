@@ -17,7 +17,7 @@ function Heading(props) {
     let history = useHistory()
     const isMobile = useMediaQuery({ query: '(max-width: 576px)' })
     let { user: authUser, isAuthenticated } = useSelector(state => state.auth)
-    let [btnTxt, setBtnTxt] = React.useState("Don't click")
+    let [btnTxt, setBtnTxt] = React.useState("Salir")
     if (backButton)
         backButton = (<button
             onClick={() => { isAuthenticated ? history.goBack() : history.push('/') }}
@@ -26,7 +26,7 @@ function Heading(props) {
         </button>)
     if (btnLogout)
         btnLogout = (<button onClick={() => { dispatch(logout()) }}
-            onMouseEnter={() => { setBtnTxt("Quieres salir...") }}
+            onMouseEnter={() => { setBtnTxt("Salir...") }}
             onMouseLeave={() => { setBtnTxt("Salir") }}
             className="btn btn-outline-primary rounded-pill px-2 py-1 mr-2 font-weight-bold"
         >{btnTxt}

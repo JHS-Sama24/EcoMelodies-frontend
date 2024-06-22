@@ -83,17 +83,10 @@ export default props => {
     }
     const picker = (
         <Popover id="popover-banner-color">
+
             <TwitterPicker
                 colors={[
-                    '#D9E3F0',
-                    '#F47373',
-                    '#697689',
-                    '#37D67A',
-                    '#2CCCE4',
-                    '#555555',
-                    '#dce775',
-                    '#ff8a65',
-                    '#ba68c8',
+                    '#FFF',
                 ]}
                 color={color}
                 onChangeComplete={color => setColor(color.hex)}
@@ -116,7 +109,7 @@ export default props => {
                 <Modal.Header closeButton className="py-2">
                     <Modal.Title>
                         <small className="font-weight-bold">
-                            {!redirected ? 'Edit profile' : 'Complete your profile'}{' '}
+                            {!redirected ? 'Editar perfil' : 'Completa tu perfil'}{' '}
                         </small>
                     </Modal.Title>
                 </Modal.Header>
@@ -153,8 +146,12 @@ export default props => {
                                     overlay={picker}
                                 >
                                     <button
-                                        style={{ color: color !== '#f5f8fa' && color }}
-                                        className="mx-auto my-auto btn btn-outline border px-2 py-1 font-weight-bold"
+                                        style={{
+                                            color: color !== '#00D084' && color,
+                                            opacity: 0,
+                                            border: 'none'
+                                        }}
+                                        className="mx-auto my-auto btn btn-outline px-2 py-1 font-weight-bold"
                                     >
                                         Pick banner color
                                     </button>
@@ -172,11 +169,11 @@ export default props => {
                                         onClick={() => setProfile(getRandomProfileUrl())}
                                         className="btn btn-outline-primary rounded-pill px-2 py-1 btn-sm font-weight-bold"
                                     >
-                                        Change Avatar
+                                        Cambiar Foto
                                     </button>
                                 </Row>
                                 <Form.Group controlId="name">
-                                    <Form.Label>Name</Form.Label>
+                                    <Form.Label>Nombre</Form.Label>
                                     <Form.Control
                                         style={{ fontSize: '1.25rem' }}
                                         type="text"
@@ -185,7 +182,7 @@ export default props => {
                                     />
                                 </Form.Group>
                                 <Form.Group controlId="bio">
-                                    <Form.Label>Bio</Form.Label>
+                                    <Form.Label>Biografía</Form.Label>
                                     <Form.Control
                                         as="textarea"
                                         style={{ fontSize: '1.25rem', minHeight: '100px' }}
@@ -194,7 +191,7 @@ export default props => {
                                     />
                                 </Form.Group>
                                 <Form.Group controlId="location">
-                                    <Form.Label>Location</Form.Label>
+                                    <Form.Label>Ubicación</Form.Label>
                                     <Form.Control
                                         style={{ fontSize: '1.25rem' }}
                                         type="text"
@@ -202,6 +199,7 @@ export default props => {
                                         onChange={n => setLocation(n.target.value)}
                                     />
                                 </Form.Group>
+
                                 <Form.Group controlId="website">
                                     <Form.Label>Website</Form.Label>
                                     <Form.Control
@@ -211,6 +209,9 @@ export default props => {
                                         onChange={n => setWebsite(n.target.value)}
                                     />
                                 </Form.Group>
+
+
+
                             </div>
                         </Form>
                     </fieldset>
@@ -225,7 +226,7 @@ export default props => {
                                 onClick={handleSubmit}
                                 className="btn btn-primary rounded-pill px-3 py-1 font-weight-bold"
                             >
-                                Save
+                                Guardar
                             </button>
                         </div>
                     </div>
@@ -239,22 +240,10 @@ export default props => {
 function getRandomProfileUrl() {
     //geneartes random pic in img
     let imgs = [
-        'animals-1298747.svg',
-        'bunny-155674.svg',
-        'cat-154642.svg',
-        'giraffe-2521453.svg',
-        'iron-man-3829039.svg',
-        'ironman-4454663.svg',
-        'lion-2521451.svg',
-        'man-1351317.svg',
-        'pumpkin-1640465.svg',
-        'rat-152162.svg',
-        'sherlock-3828991.svg',
-        'spider-man-4639214.svg',
-        'spiderman-5247581.svg',
-        'thor-3831290.svg',
-        'tiger-308768.svg',
-        'whale-36828.svg',
+        'profile1.svg',
+        'profile2.svg',
+        'profile3.svg',
+        'profile4.svg'
     ]
     let img = imgs[Math.floor(Math.random() * imgs.length)]
     // TODO A stable and real image server!

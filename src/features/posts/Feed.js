@@ -21,8 +21,8 @@ export default (props) => {
     let append;
     if (status === 'done')
         append = (<>
-            <div className="message text-info">You have reached the end!</div>
-            <FollowCard noPop length={7} title='Follow (more) users to see their posts' />
+            <div className="message text-info">¡Has llegado al final!</div>
+            <FollowCard noPop length={7} title='Sigue a usuarios para ver sus publicaciones' />
         </>)
     return (<>
         {/* <ScrollManager scrollKey="feed-screen" /> */}

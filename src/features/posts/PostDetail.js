@@ -34,7 +34,7 @@ export default props => {
     if (status === 'loading')
         return <Spinner />
     if (!post) {
-        return <div className="message font-weight-bold">Post not Found</div>
+        return <div className="message font-weight-bold">Publicación no encontrada</div>
     }
     return (<>
         <ScrollToTop />

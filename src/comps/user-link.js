@@ -58,8 +58,8 @@ export const UserPopover = React.forwardRef(
                     <span className="text-muted">Joined {new Date(user.created_at).toDateString()}</span>
                 </Row>
                 <Row className="d-flex mt-1 mb-2">
-                    <em className="mr-2">{numFormatter(user.followers_count)} <span className="text-muted">Followers</span></em>
-                    <div className="mr-2">{numFormatter(user.friends_count)} <span className="text-muted">Following</span></div>
+                    <em className="mr-2">{numFormatter(user.followers_count)} <span className="text-muted">Seguidores</span></em>
+                    <div className="mr-2">{numFormatter(user.friends_count)} <span className="text-muted">Siguiendo</span></div>
                 </Row>
             </Card>
         </Popover>)

@@ -135,7 +135,7 @@ export default props => {
             >
                 <Modal.Header closeButton className="py-2">
                     <Modal.Title><small className="font-weight-bold">
-                        {replyId ? 'Post your reply' : 'Compose post'}
+                        {replyId ? 'Publica tu respuesta' : 'Redactar publicación'}
                     </small></Modal.Title>
                 </Modal.Header>
                 {status === 'pending' && (
@@ -144,7 +144,7 @@ export default props => {
                 )}
                 {status === "error" && (
                     <Alert variant="danger" className="font-weight-bold text-white">
-                        Error submiting post, try again!
+                        Error al enviar la publicación, ¡inténtalo de nuevo!
                     </Alert>
                 )}
                 {error && (
@@ -171,7 +171,7 @@ export default props => {
                                 name="text"
                                 onChange={handleChange}
                                 value={editor_text}
-                                placeholder="What's happening?"
+                                placeholder="¿Qué está pasando?"
                             >
                             </textarea>
                             <QuotedPost className="mb-2 mt-n5" post={replyPost || quotePost} />
@@ -195,7 +195,7 @@ export default props => {
                                 onClick={handleSubmit}
                                 disabled={!active}
                                 className="btn btn-primary rounded-pill px-3 py-2 font-weight-bold">
-                                Post
+                                Publicar
                             </button>
                         </div>
                     </div>
