@@ -2,7 +2,7 @@
   "name": "tclone",
   "sideEffects": false,
   "version": "2.2.4",
-  "proxy": "http://localhost:6969",
+  "proxy": "http://20.83.180.86/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.38",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
