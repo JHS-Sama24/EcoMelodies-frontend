@@ -1,16 +1,21 @@
-# Paso 1: Establecer la imagen base
-FROM node:18-alpine
+# Use a specific version of node to ensure compatibility
+FROM node:14
 
-# Paso 2: Establecer el directorio de trabajo
+# Set the working directory in the Docker container
 WORKDIR /app
 
-# Paso 3: Copiar los archivos de la aplicación
-COPY package.json .
-# Paso 4: Instalar las dependencias
+# Copy package.json and package-lock.json to use cached layers
+COPY package*.json ./
+
+# Install dependencies using npm ci for a clean install
 RUN npm install
 
-# Paso 5: Exponer el puerto
+# Copy the rest of your application code
+COPY . .
+
+# Expose the port your app runs on
 EXPOSE 3000
 
-# Paso 6: Definir el comando para iniciar la aplicación
+# Command to run your app
+
 CMD ["npm", "start"]
